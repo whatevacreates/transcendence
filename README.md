@@ -64,8 +64,8 @@ Includes **matchmaking, tournaments, live chat**, and an **experimental AI oppon
 
 1. Clone the repo:  
 ```bash
-git clone https://github.com/whatevacreates/transcendence-eva.git
-cd transcendence-eva
+git clone https://github.com/whatevacreates/transcendence.git
+cd transcendence
 
 2. Add SSL certificates
 
