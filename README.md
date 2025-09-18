@@ -1,6 +1,7 @@
 # 🏓 Transcendence  
 
 A **real-time multiplayer Pong platform** built at [42 Lausanne](https://42lausanne.ch).  
+Play here: https://transcendence-frontend-923872734712.europe-west6.run.app/register
 
 ![alt text](pong.png)
 
