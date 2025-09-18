@@ -77,10 +77,16 @@ cert.pem
 
 Generate local dev certs:
 
+cd nginx
+
+mkdir ssl
+
+chmod +x ssl
+
 openssl req -x509 -nodes -days 365 -newkey rsa:2048 \
-  -keyout nginx/ssl/privkey.pem \
-  -out nginx/ssl/cert.pem \
-  -subj "/CN=localhost"
+    -keyout privkey.pem \
+    -out cert.pem \
+    -subj "/CN=localhost"
 
 3. Add environment file
 
@@ -92,6 +98,8 @@ Contact me → eva.anna.dev@gmail.com
 Ensure Docker daemon is running.
 
 5. Run project: 
+
+- make sure that port 8080 is free
 make prod-up
 
 
