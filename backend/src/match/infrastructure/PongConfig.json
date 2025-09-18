@@ -1,0 +1,22 @@
+{
+  "game": {
+    "winningScore": 5,
+    "countdown": 3,
+    "shufflePlayers": false
+  },
+  "ball": {
+    "x": 0.5,
+    "y": 0.5,
+    "radius": 0.0125,
+    "speed": 0.004
+  },
+  "paddle": {
+    "position": 0.5,
+    "height": 0.2,
+    "width": 0.0125,
+    "speed": 0.04
+  },
+  "net": {
+    "width": 0.0025
+  }
+}

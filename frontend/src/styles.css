@@ -1,0 +1,170 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import 'button-animations.css';
+
+
+/* 
+=====================
+TEXT COLORS
+===================== 
+*/
+
+/* Main light text */
+.text-primary {
+    @apply text-lightText;
+}
+
+/* Secondary subtle text */
+.text-secondary {
+    @apply text-gray-400;
+}
+
+/* Accent text (for highlights, links, badges) */
+.text-accent {
+    @apply text-blue-500;
+}
+
+/* Success / positive */
+.text-success {
+    @apply text-green-400;
+}
+
+/* Warning / negative */
+.text-warning {
+    @apply text-yellow-400;
+}
+
+.text-error {
+    @apply text-red-400;
+}
+
+
+/* 
+=====================
+FONT STYLES
+===================== 
+*/
+
+/* Headline (large title) */
+.text-headline {
+    @apply text-3xl font-bold tracking-tight;
+}
+
+/* Section title (medium) */
+.text-section-title {
+    @apply text-xl font-semibold tracking-tight;
+}   
+
+/* Body text (normal) */
+.text-body {
+    @apply text-base;
+}
+
+/* Small helper text */
+.text-small {
+    @apply text-sm;
+}
+
+/* Tiny caption */
+.text-caption {
+    @apply text-xs;
+}
+
+/* 
+=====================
+BACKGROUND STYLES
+===================== 
+*/
+
+/* Main app background */
+.bg-app {
+    /* @apply bg-gray-950; */
+    @apply bg-background;
+}
+
+/* Card background (inner containers, boxes) */
+.bg-card {
+    @apply bg-gray-900 rounded-2xl shadow-xl;
+}
+
+/* Card background (inner containers, boxes) */
+.bg-button {
+    @apply bg-blue-950 rounded-2xl shadow-xl;
+}
+
+/* Header or navbar background */
+.bg-header {
+    @apply bg-gray-800;
+}
+
+/* input field background */
+.bg-input {
+    @apply bg-gray-700;
+}
+
+/* Sidebar background */
+.bg-sidebar {
+    @apply bg-gray-800;
+}
+
+/* Accent background (for badges, highlights) */
+.bg-accent {
+    @apply bg-blue-600;
+}
+
+/* Success background */
+.bg-success {
+    @apply bg-green-600;
+}
+
+/* Warning background */
+.bg-warning {
+    @apply bg-yellow-500;
+}
+
+/* Error background */
+.bg-error {
+    @apply bg-red-600 font-headline font-bold;
+}
+
+/* Overlay background (for modals or backdrops) */
+.bg-overlay {
+    @apply bg-black bg-opacity-50;
+}
+
+
+.animationBtn {
+  position: relative;
+  overflow: hidden;
+  background-color: transparent;
+  transition: border-color 0.2s;
+}
+
+.animationBtn .fill-bg {
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 0;
+  height: 1200%;           /* make this big to cover diagonal */
+  background: #dbb6eb;
+  z-index: 0;
+  transform: rotate(35deg);
+  transition: width 0.9s;
+  pointer-events: none;
+}
+
+.animationBtn:hover .fill-bg,
+.animationBtn:focus .fill-bg {
+  width: 500%; 
+}
+
+.animationBtn.clicked .fill-bg {
+  width: 500% !important;
+}
+
+.animationBtn .button-content {
+  position: relative;
+  z-index: 10;
+}

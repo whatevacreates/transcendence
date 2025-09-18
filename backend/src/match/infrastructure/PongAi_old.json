@@ -1,0 +1,72 @@
+{
+  "nodes": [
+    {
+      "id": 0,
+      "bias": -2.2090259374709516,
+      "activation": "sigmoid",
+      "type": "hidden"
+    },
+    {
+      "id": 1,
+      "bias": -2.00779832690092,
+      "activation": "sigmoid",
+      "type": "hidden"
+    },
+    {
+      "id": 2,
+      "bias": -1.743788624141191,
+      "activation": "sigmoid",
+      "type": "hidden"
+    }
+  ],
+  "connections": [
+    {
+      "in": -4,
+      "out": 2,
+      "weight": -0.505066433941393,
+      "enabled": true
+    },
+    {
+      "in": -3,
+      "out": 0,
+      "weight": 0.7573757829683609,
+      "enabled": true
+    },
+    {
+      "in": -4,
+      "out": 0,
+      "weight": 1.5389441118612082,
+      "enabled": true
+    },
+    {
+      "in": 2,
+      "out": 2,
+      "weight": 0.7279291528864825,
+      "enabled": true
+    },
+    {
+      "in": -2,
+      "out": 1,
+      "weight": -0.8146430750954932,
+      "enabled": true
+    },
+    {
+      "in": -1,
+      "out": 1,
+      "weight": 1.6016890794562277,
+      "enabled": true
+    },
+    {
+      "in": -2,
+      "out": 2,
+      "weight": 0.8606149528241673,
+      "enabled": true
+    },
+    {
+      "in": -4,
+      "out": 1,
+      "weight": 0.23248636099806386,
+      "enabled": true
+    }
+  ]
+}

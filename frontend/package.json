@@ -1,0 +1,22 @@
+{
+    "name": "vanilla-ts-tailwind",
+    "version": "1.0.0",
+    "type": "module",
+    "scripts": {
+        "build:ts": "tsc",
+        "build:css": "postcss src/styles.css -o dist/styles.css",
+        "build": "npm run build:ts && npm run build:css && cp index.html dist/",
+        "clean": "rm -rf dist/* && rm -rf build",
+        "watch:ts": "npm run clean && cp index.html dist/ && tsc --watch",
+        "watch:css": "postcss src/styles.css -o dist/styles.css --watch",
+        "dev": "npm run clean && cp index.html dist/ && concurrently \"npm:watch:ts\" \"npm:watch:css\""
+    },
+    "devDependencies": {
+        "autoprefixer": "^10.4.21",
+        "concurrently": "^9.1.2",
+        "postcss": "^8.5.4",
+        "postcss-cli": "^10.1.0",
+        "tailwindcss": "^3.4.17",
+        "typescript": "^5.8.3"
+    }
+}
