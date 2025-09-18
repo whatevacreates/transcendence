@@ -9,7 +9,6 @@ Includes **matchmaking, tournaments, live chat**, and an **experimental AI oppon
 📄 **UX/UI & Architecture Diagrams:** [View PDF] https://acrobat.adobe.com/id/urn:aaid:sc:EU:c3863cb2-9cd6-48f1-8df0-6c5ee7b17891
 
 
-![alt text](image.png)
 ---
 
 ## 📌 Overview  
